@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import logo from '../../assets/images/navLogo.png'
 import { FaRegUserCircle  } from 'react-icons/fa'
+import { AuthContext } from "../Pages/Provider/AuthProvider";
+import { useContext } from "react";
 
 
 const Navbar = () => {
+    const {user, handleSignOut} = useContext(AuthContext)
     return (
         <div className="navbar bg-White shadow-md font-bold font-mono px-4 ">
             <div className="navbar-start">
@@ -20,10 +23,16 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-2">
             <FaRegUserCircle style={{ fontSize: '2rem' }}   />
-            <Link to='/login'><button className="btn btn-outline btn-primary text-opacity-70 font-bold px-5">Sign in</button></Link>
-          <Link to='/signup'><button className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign up</button></Link>
+            {
+                    user?
+                    <Link to='/signup'><button onClick={()=>handleSignOut()} className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign up</button></Link>
+                   
+                    :
+                    <Link to='/login'><button className="btn btn-outline btn-primary text-opacity-70 font-bold px-5">Sign in</button></Link>
+          
+        }
                
-
+       
 
 
 
