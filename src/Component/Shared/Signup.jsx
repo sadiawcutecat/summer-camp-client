@@ -36,7 +36,7 @@ const Signup = () => {
 
                     <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
                         <div className="card-body">
-                            <h1 className="text-3xl text-center text-accent font-bold">Sign Up</h1>
+                            <h1 className="text-3xl text-center text-primary bg-opacity-70 font-mono font-bold">Sign Up</h1>
                             <form onSubmit={handleSignup}>
                                 <div className="form-control">
                                     <label className="label">
@@ -69,7 +69,7 @@ const Signup = () => {
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <input className="btn btn-accent text-white font-serif font bold" type="submit" value="SignUp" />
+                                    <input className="btn btn-primary text-white font-mono font bold" type="submit" value="SignUp" />
                                 </div>
 
                             </form>
