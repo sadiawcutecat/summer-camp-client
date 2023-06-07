@@ -20,8 +20,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-2">
             <FaRegUserCircle style={{ fontSize: '2rem' }}   />
-            <button className="btn btn-outline btn-primary text-opacity-70 font-bold px-5">Sign in</button>
-            <button className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign up</button>
+            <Link to='/login'><button className="btn btn-outline btn-primary text-opacity-70 font-bold px-5">Sign in</button></Link>
+          <Link to='/signup'><button className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign up</button></Link>
                
 
 
