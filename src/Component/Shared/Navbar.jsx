@@ -25,7 +25,7 @@ const Navbar = () => {
             <FaRegUserCircle style={{ fontSize: '2rem' }}   />
             {
                     user?
-                    <Link to='/signup'><button onClick={()=>handleSignOut()} className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign up</button></Link>
+                    <Link to='/signup'><button onClick={()=>handleSignOut()} className="btn  btn-primary bg-opacity-70 text-white font-bold px-5">Sign Out</button></Link>
                    
                     :
                     <Link to='/login'><button className="btn btn-outline btn-primary text-opacity-70 font-bold px-5">Sign in</button></Link>
