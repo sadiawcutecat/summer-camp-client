@@ -18,7 +18,8 @@ const PopularInstructor = () => {
 const selectInstructor = instructors?.slice(0,6);
 
     return (
-        <div className="my-12 mx-auto container">
+      <section className=" container mx-auto">
+          <div className="my-12 mx-auto container">
             <div className="font-mono text-center  my-9">
                 <h1 className="text-primary text-opacity-70 font-bold  text-4xl ">Popular Instructors Section</h1>
                 <p className="my-4 "><span className="text-orange-500">As language instructors</span>, you hold a significant role in shaping the language <br /> skills and cultural understanding of your students. Your dedication and expertise <br />
@@ -46,6 +47,7 @@ const selectInstructor = instructors?.slice(0,6);
                 }
             </div>
         </div>
+      </section>
 
     );
 };

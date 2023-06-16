@@ -16,10 +16,11 @@ const ClassesSection = () => {
     }, [])
 const selectClasses = popularClasses?.slice(0,6);
     return (
-        <div className="my-12 mx-auto container">
+      <section className=" container mx-auto">
+          <div className="my-12 mx-auto container">
         <div className="font-mono text-center  my-9">
             <h1 className="text-primary text-opacity-70 font-bold  text-4xl ">Popular Classes Section</h1>
-           
+            <p className="my-4 text-orange-500">Certainly! Learning a foreign language can open up <br /> a world of opportunities and provide you with valuable skills.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {
@@ -45,6 +46,7 @@ const selectClasses = popularClasses?.slice(0,6);
             }
         </div>
     </div>
+      </section>
     );
 };
 
