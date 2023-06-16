@@ -8,10 +8,10 @@ const Classes = () => {
     const { user } = useContext(AuthContext);
     console.log(user)
     const [classes, setClasses] = useState([]);
-    const [SelectedClasses, setSelectedClasses] = useState([]);
+    // const [SelectedClasses, setSelectedClasses] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://eduline-server.onrender.com/api/classes`);
+            const response = await fetch(`https://eduline-server-it14.onrender.com/api/classes`);
             if (response.ok) {
                 const data = await response.json();
                 console.log(data)

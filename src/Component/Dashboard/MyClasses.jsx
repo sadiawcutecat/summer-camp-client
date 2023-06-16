@@ -18,6 +18,7 @@ const MyClasses = () => {
                 })
                 console.log("filter ", filterClasses)
                 setClasses(filterClasses);
+                
             } else {
                 // Error occurred while fetching data
                 console.error('Error fetching data!');
