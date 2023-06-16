@@ -57,7 +57,7 @@ const MySelectedClasses = () => {
                                     </div>
                                     <h2 className="text-xl font-medium title-font text-gray-900 mt-5">{c.name}</h2>
                                     <p className="text-base leading-relaxed mt-2">instructor name: {c.Instructor_name}</p>
-                                    <p className="text-base leading-relaxed mt-2">instructor : {c.Instructor_email}</p>
+                                    <p className="text-base leading-relaxed mt-2">instructor email : {c.Instructor_email}</p>
 
                                 </div>
                               </div>
