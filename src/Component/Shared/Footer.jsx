@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaYoutube  } from 'react-icons/fa'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-white shadow-md font-mono  text-base-content">
+            <footer className="footer mx-auto container p-10 bg-orange-200 shadow-md font-mono  text-base-content">
                 <div>
                     <span className="footer-title text-primary font-bold">Quick Access</span>
                     <a className="link link-hover">Apply to Teach</a>
@@ -44,7 +44,7 @@ const Footer = () => {
                     <a className="link link-hover">Policy</a>
                 </div>
             </footer>
-            <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content font-mono font-bold border-base-300">
+            <footer className="footer container mx-auto px-10 py-4 border-t bg-orange-200 text-base-content font-mono font-bold border-base-300">
                 <div className="items-center grid-flow-col">
                     <img src={logo} alt="" />
                 

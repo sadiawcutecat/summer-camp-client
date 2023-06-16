@@ -1,6 +1,6 @@
 
 
-const Helmet = () => {
+const ClassesSection = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Helmet = () => {
     );
 };
 
-export default Helmet;
+export default ClassesSection;
