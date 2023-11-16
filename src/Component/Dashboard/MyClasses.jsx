@@ -36,7 +36,7 @@ const MyClasses = () => {
                 <div className="flex flex-col text-center w-full mb-20">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">My Classes</h1>
                 </div>
-                <div className="flex flex-wrap">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 flex flex-wrap">
                     {
                         classes.map(c => 
                             <div 
